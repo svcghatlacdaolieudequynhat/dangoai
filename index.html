@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/app.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>SVCG hạt Lạc Đạo - Liễu Đề - Quỹ Nhất</title>
+</head>
+<body>
+    <div class="container">
+        <form action="" method="POST" id="form">
+            <div class="logo"><img src="/assets/images/logo.png" width="50px" alt=""></div>
+            <div class="form-group">
+                <label for="name">Tên Thánh, Họ và Tên</label>
+                <input type="text" id="name" name="name" placeholder="Jos Hoàng A">
+            </div>
+            <div class="form-group">
+                <label for="phone">Số điện thoại</label>
+                <input type="text" id="phone" name="phone" placeholder="0393932xxx">
+            </div>
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="text" id="email" name="email" placeholder="example@gmail.com">
+            </div>
+            <div class="form-group">
+                <label for="church">Giáo xứ, Giáo hạt</label>
+                <input type="text" id="church" name="church" placeholder="Giáo xứ Nam Trực, Giáo hạt Liễu Đề">
+            </div>
+            <div class="form-group">
+                <label for="vehicle">Phương tiện đi lại</label>
+                <select name="vehicle" id="vehicle">
+                    <option value="" selected="true" disabled="disabled">Vui lòng chọn phương tiện</option>
+                    <option value="Xe đạp">Xe đạp</option>
+                    <option value="Xe máy">Xe máy</option>
+                    <option value="Xe tư bánh">Xe tư bánh</option>
+                    <option value="Trực thăng">Trực thăng</option>
+                    <option value="Tàu ngầm">Tàu ngầm</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="note">Ghi chú</label>
+                <textarea name="note" id="note" cols="30" rows="10" placeholder="Ghi chú"></textarea>
+            </div>
+            <div class="form-group">
+                <button type="button" id="submit">Gửi</button>
+            </div>
+        </form>
+    </div>
+    <div class="modal-true">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Đăng ký thành công!</h3>
+          <p>Thông tin chi tiết về chương trình được gửi tới email của bạn!</p>
+        </div>
+    </div>
+    <div class="modal-false">
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <h3>Đăng ký không thành công!</h3>
+          <p>Xin vui lòng thử lại!!</p>
+        </div>
+    </div>
+</body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="assets/js/app.js"></script>
+</html>
